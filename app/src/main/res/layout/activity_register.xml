@@ -23,17 +23,26 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Username"
+            android:text="Display Name"
+            android:id="@+id/dn"
             android:layout_marginTop="20dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Username"
+            android:id="@+id/un"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Password"
+            android:id="@+id/pw"
             android:layout_marginTop="10dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Password Confirm"
+            android:id="@+id/pwc"
             android:layout_marginTop="10dp"/>
     </LinearLayout>
     <LinearLayout
