@@ -65,8 +65,9 @@ public class Register_Activity extends AppCompatActivity {
         if(display.isEmpty()) return false;
         if(User.isEmpty()) return false;
         if(Pass.isEmpty()) return false;
-        if(!PassC.equals(Pass)) return false;
-        return false;
+        if(!Pass.equals(PassC)) return false;
+        else
+        return true;
     }
 
     private class Regiter extends AsyncTask<Void,Void,String>{
@@ -103,7 +104,7 @@ public class Register_Activity extends AppCompatActivity {
                     }
                 }
             } catch (JSONException e) {
-                e.printStackTrace();
+
             }
         }
 
@@ -112,7 +113,7 @@ public class Register_Activity extends AppCompatActivity {
 
             OkHttpClient client = new OkHttpClient();
             Request request;
-            Response response = null;
+            Response response;
 
             RequestBody requestBody = new FormBody.Builder()
                     .add("username",Usern)

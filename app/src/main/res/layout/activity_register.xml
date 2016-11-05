@@ -51,6 +51,7 @@
         android:orientation="horizontal"
         android:layout_alignParentBottom="true">
         <Button
+            android:id="@+id/btreg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="REGISTER"/>
